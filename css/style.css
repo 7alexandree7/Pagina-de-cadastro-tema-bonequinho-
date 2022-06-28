@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+.w50 {
+    float: left;
+    width: 50%;
+    padding-right: 15px;
+}
+
+.box {
+    display: flex;
+    width: 930px;
+}
+
+.img-box {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px 0 0 20px;
+}
+
+.img-box img {
+    width: 100%;
+}
+
+.form-box {
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(40px);
+    padding: 30px 40px;
+    width: 50%;
+    border-radius: 0 20px 20px 0;
+}
+
+.form-box h2 {
+    font-size: 30px;    
+}
+
+.form-box p {
+    font-weight: bold;
+    color: #3d3d3d;
+}
+
+.form-box p a {
+    text-decoration: none;
+    color: #ff008a;
+}
+
+.form-box  form {
+    margin: 20px 0
+}
+
+form .input-group {
+    margin-bottom: 15px;
+}
+
+form .input-group label {
+    display: block;
+    font-weight: bold;
+    color: #3d3d3d;
+    margin-bottom: 5px;
+}
+
+form .input-group input {
+    width: 100%;
+    height: 43px;
+    background-color:rgba(255, 255, 255, 0.32);
+    border: 2px solid transparent;
+    border-radius: 20px;
+    outline: none;
+    padding: 15px;
+    font-size: 15px;
+    color: #616161;
+    transition: all 0.4s ease;
+}
+
+form .input-group input:focus {
+    border-color: #ff008869;
+}
+
+form .input-group button {
+    width: 100%;
+    height: 43px;
+    background: #ff008a;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    margin-top: 15px;
+    color: #fff;
+    transition: all 1s ease;
+    border: 1px solid #ff008a;
+}
+
+.btn:hover {
+    background-color: #ffffff80;
+    border-color: #ff008a;
+    color:#ff008a;
+
+}
+
+@media (max-width:930px) {
+    .img-box {
+        display: none;
+    }
+
+    .box {
+        width: 700px;
+    }
+
+    .form-box {
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .w50 {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+
+
